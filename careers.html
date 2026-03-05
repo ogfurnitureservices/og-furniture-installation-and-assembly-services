@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | OG Furniture Installation Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .input-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+      width: 100%;
+      padding: 1rem 1rem;
+      border-radius: 0.75rem;
+      border: 1px solid #d1d5db;
+      outline: none;
+      font-size: 1rem;
+      background: #fff;
+    }
+    .input-group label {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      color: #6b7280;
+      font-size: 0.95rem;
+      pointer-events: none;
+      transition: 0.3s;
+      background: white;
+      padding: 0 0.25rem;
+    }
+    .input-group input:focus ~ label,
+    .input-group input:not(:placeholder-shown) ~ label,
+    .input-group textarea:focus ~ label,
+    .input-group textarea:not(:placeholder-shown) ~ label,
+    .input-group select:focus ~ label {
+      top: -0.6rem;
+      font-size: 0.8rem;
+      color: #d97706;
+    }
+  </style>
+</head>
+
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">OG Furniture Installation Services</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+      <li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+      <li><a href="aboutus.html" class="hover:text-amber-400">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-amber-400">Book Service</a></li>
+        <li><a href="careers.html" class="text-amber-400">Careers</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden">
+  <img 
+    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+    alt="Furniture Installation Career"
+    class="w-full h-[420px] object-cover"
+  >
+
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 flex items-center justify-center text-center px-6">
+    <div class="text-white">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Build Your Career With Us
+      </h2>
+      <p class="text-xl">
+        Join professional furniture installers across South India
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FORM SECTION -->
+<section class="py-16 px-4">
+  <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-lg p-10 rounded-3xl shadow-2xl border">
+
+    <h3 class="text-3xl font-bold text-center mb-4">Technician Application Form</h3>
+    <p class="text-center text-gray-600 mb-8">
+      Fill in your details and submit directly via WhatsApp
+    </p>
+
+    <form id="applicationForm">
+
+      <div class="input-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" id="phone" placeholder=" " required>
+        <label>WhatsApp Phone Number</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" ">
+        <label>Email (Optional)</label>
+      </div>
+
+      <div class="input-group">
+        <select id="state" required>
+          <option value="" disabled selected></option>
+          <option>Telangana</option>
+          <option>Andhra Pradesh</option>
+          <option>Karnataka</option>
+          <option>Tamil Nadu</option>
+          <option>Kerala</option>
+        </select>
+        <label>State</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="district" placeholder=" " required>
+        <label>District</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="location" placeholder=" " required>
+        <label>City / Area</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="experience" rows="4" placeholder=" " required></textarea>
+        <label>Experience Details</label>
+      </div>
+
+      <button type="submit"
+        class="w-full py-4 rounded-full text-white font-bold text-lg bg-gradient-to-r from-amber-600 to-orange-600 hover:scale-105 transition shadow-lg">
+        🚀 Apply via WhatsApp
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white text-center p-6">
+  <p>📧 ogfurnitureservices@gmail.com | 📞 +91 9701223069</p>
+  <p class="text-sm mt-2">&copy; 2025 OG Furniture Installation Services</p>
+</footer>
+
+<script>
+document.getElementById("applicationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+`*Technician Application*
+Name: ${name.value}
+Phone: ${phone.value}
+Email: ${email.value}
+State: ${state.value}
+District: ${district.value}
+Location: ${location.value}
+
+Experience:
+${experience.value}`;
+
+  window.open(
+    "https://wa.me/919701223069?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+});
+</script>
+
+</body>
+</html>

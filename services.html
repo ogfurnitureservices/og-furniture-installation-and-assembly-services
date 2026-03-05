@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Furniture Installation Services - Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fadeIn { animation: fadeIn 1s ease-in-out forwards; }
+    .animate-slideInUp { animation: slideInUp 0.6s ease-out forwards; }
+
+    /* Chatbot bubbles */
+    .chatbot-bubble { max-width: 80%; padding: 0.75rem; border-radius: 1rem; margin-bottom: 0.5rem; }
+    .chatbot-user { background-color: #3b82f6; color: white; margin-left: auto; }
+    .chatbot-bot { background-color: #e5e7eb; color: #1f2937; }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4 sticky top-0 z-40 shadow-lg">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex justify-between items-center w-full md:w-auto">
+        <h1 class="text-2xl font-bold">OG Furniture installation services</h1>
+        <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu Items -->
+      <div id="navMenu" class="hidden md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 w-full md:w-auto mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+          <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+      <li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+      <li><a href="aboutus.html" class="hover:text-amber-400">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-amber-400">Book Service</a></li>
+        <li><a href="careers.html" class="text-amber-400">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="min-h-screen py-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 animate-fadeIn">Our Services</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto px-4">
+      <!-- Existing -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg" alt="Hospital" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Hospital</h3>
+        <p>Professional installation of medical furniture for hospitals.</p>
+      </div>
+
+      <!-- Villas (enhanced) -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://modeneseinteriors.com/uploads/2022/09/lobby_view1.jpg" alt="Villa" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Villas</h3>
+        <p>Luxury furniture assembly and installation for elegant villas and high-end residences.</p>
+      </div>
+
+      <!-- Existing School -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://images.pexels.com/photos/356065/pexels-photo-356065.jpeg" alt="School" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">School</h3>
+        <p>Durable classroom furniture installation for schools.</p>
+      </div>
+
+      <!-- Colleges/Universities (enhanced) -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://www.sediasystems.com/img/blog/m60-swing-away-world.jpg" alt="Colleges & Universities" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Colleges & Universities</h3>
+        <p>Expert assembly of lecture halls, auditoriums, and educational furniture for colleges and universities.</p>
+      </div>
+
+      <!-- Existing Home -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://images.pexels.com/photos/7491085/pexels-photo-7491085.jpeg" alt="Home" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Home</h3>
+        <p>Expert home furniture assembly and installation.</p>
+      </div>
+
+      <!-- Offices (enhanced) -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://blog.gebesa.com/wp-content/uploads/2025/12/ELITE-ARCHIE-PAVOREAL-1024x577.webp" alt="Office" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Offices</h3>
+        <p>Efficient setup of modern office furniture, cubicles, and workspaces for productive environments.</p>
+      </div>
+
+      <!-- New: Kitchen -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://www.geccabinetdepot.com/wp-content/uploads/2021/04/RTA-1024x683.jpg" alt="Kitchen" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Kitchen</h3>
+        <p>Professional assembly and installation of kitchen cabinets, islands, and modular furniture.</p>
+      </div>
+
+      <!-- New: Gym -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://www.ahealthysliceoflife.com/wp-content/uploads/2025/10/home-fitness-gym-09-900x600.jpg" alt="Gym" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Gym</h3>
+        <p>Secure installation of gym equipment, racks, and fitness furniture for home or commercial gyms.</p>
+      </div>
+
+      <!-- New: Home Theatre -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/fun-lighting-64b433f17a68a.png?crop=0.8978675645342312xw:1xh;center,top&resize=1200:*" alt="Theatre" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Home Theatre</h3>
+        <p>Luxurious setup of seating, media units, and furniture for immersive home theatre experiences.</p>
+      </div>
+
+      <!-- New: Farm House -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://www.southernliving.com/thmb/-DSamxsJGRlaBhHgvryGDgaSnQ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/james-farmer-living-room-2442701-33564_0-2000-2a0a5b8c38ad42faa8e275b6be082cf9.jpg" alt="Farm House" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Farm House</h3>
+        <p>Rustic and durable furniture installation tailored for charming farmhouses.</p>
+      </div>
+
+      <!-- New: Banks -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://images.squarespace-cdn.com/content/v1/656f08d571fbf112140256cf/1702492765997-1B3DRGTPPVK361MJ47ET/HTG-ROPS-5-Header-Image.jpg" alt="Banks" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Banks</h3>
+        <p>Secure and professional installation of counters, seating, and furniture for banking institutions.</p>
+      </div>
+
+      <!-- New: Beds Installation -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://i.ytimg.com/vi/sKKXB7O_uPs/sddefault.jpg" alt="Beds Installation" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Beds Installation</h3>
+        <p>Expert assembly and setup of bed frames, headboards, and complete bedroom furniture.</p>
+      </div>
+
+      <!-- New: China Cabinet Installation -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition animate-slideInUp">
+        <img src="https://d1h3pk8iipmcfn.cloudfront.net/blog/wp-content/uploads/2022/03/14092221/CT-homepage-mainB-scaled-1-940x710.jpg" alt="China Cabinet" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">China Cabinet Installation</h3>
+        <p>Professional installation and secure setup of china cabinets, hutches, and display cases.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="fixed bottom-4 right-4 z-50">
+    <button id="chatbotToggle" class="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition">
+      💬
+    </button>
+    <div id="chatbotWindow" class="hidden bg-white rounded-lg shadow-xl w-80 max-h-[500px] flex flex-col mt-2">
+      <div class="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+        <h3 class="text-lg font-semibold">OG Assistant</h3>
+        <button id="chatbotClose" class="text-white hover:text-gray-200">✖</button>
+      </div>
+      <div id="chatbotMessages" class="flex-1 p-4 overflow-y-auto">
+        <div class="chatbot-bot chatbot-bubble">Hello! How can I help you today?</div>
+      </div>
+      <div class="p-4 border-t">
+        <input id="chatbotInput" type="text" placeholder="Type here..." class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-4 mt-8">
+    <p>Contact us: ogfurnitureservices@gmail.com | Phone: (+91) 9701223069</p>
+    <p>&copy; 2025 OG Furniture Installation Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Navbar Toggle for Mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+
+    // Chatbot Toggle
+    const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const chatbotClose = document.getElementById('chatbotClose');
+    const chatbotInput = document.getElementById('chatbotInput');
+    const chatbotMessages = document.getElementById('chatbotMessages');
+
+    chatbotToggle.addEventListener('click', () => chatbotWindow.classList.toggle('hidden'));
+    chatbotClose.addEventListener('click', () => chatbotWindow.classList.add('hidden'));
+
+    chatbotInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' && chatbotInput.value.trim()) {
+        const msg = chatbotInput.value;
+        chatbotMessages.innerHTML += `<div class="chatbot-user chatbot-bubble">${msg}</div>`;
+        chatbotInput.value = '';
+        setTimeout(() => {
+          chatbotMessages.innerHTML += `<div class="chatbot-bot chatbot-bubble">Thank you! We’ll get back shortly.</div>`;
+          chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>

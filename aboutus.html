@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - OG Furniture Installation Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Deep blue
+            accent: '#10b981',  // Emerald green
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .chatbot-bubble { max-width: 80%; padding: 0.75rem 1rem; border-radius: 1.25rem; margin-bottom: 0.75rem; }
+    .chatbot-user { background-color: #1e40af; color: white; margin-left: auto; border-bottom-right-radius: 0.25rem; }
+    .chatbot-bot { background-color: #f3f4f6; color: #111827; border-bottom-left-radius: 0.25rem; }
+  </style>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-900 antialiased">
+  <!-- Navbar -->
+  <nav class="bg-gray-950 text-white sticky top-0 z-40 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-tight">OG Furniture Installation Services</h1>
+      <div class="hidden md:flex space-x-8">
+        <a href="home.html" class="hover:text-accent transition">Home</a>
+        <a href="services.html" class="hover:text-accent transition">Services</a>
+        <a href="aboutus.html" class="text-accent font-semibold">About Us</a>
+        <a href="contact.html" class="hover:text-accent transition">Book Service</a>
+      </div>
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="navMenu" class="hidden md:hidden px-6 pb-4 space-y-4">
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+               <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+      <li><a href="services.html" class="hover:text-amber-400">Services</a></li>
+      <li><a href="aboutus.html" class="hover:text-amber-400">About Us</a></li>
+      <li><a href="contact.html" class="hover:text-amber-400">Book Service</a></li>
+        <li><a href="careers.html" class="text-amber-400">Careers</a></li>
+          <ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center" style="background-image: url('https://media.designcafe.com/wp-content/uploads/2023/10/21123034/home-theatre-interior-design.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"></div>
+    <div class="relative text-center text-white px-6 animate-fade-in">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">About OG Furniture Installation</h1>
+      <p class="text-xl md:text-2xl font-medium">Over 17 Years of Excellence in Furniture Solutions</p>
+    </div>
+  </section>
+
+  <!-- Owner & Company Info -->
+  <section class="container mx-auto py-16 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <img src="srsq.jpeg" alt="Mr. Syed Rahmathullah - Founder"
+        class="rounded-3xl shadow-2xl w-full md:w-1/2 object-cover h-96">
+      <div>
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">Meet Our Founder</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          <strong>Mr. Syed Rahmathullah</strong>, the visionary behind <strong>OG Furniture Installation Services</strong>, brings over <strong>17 years of experience</strong> in professional furniture installation and interior design solutions.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          With a commitment to precision and quality, our team has successfully completed hundreds of installations for homes, offices, hospitals, schools, and luxury villas across Hyderabad and surrounding areas.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We pride ourselves on a customer-first approach, delivering reliable, timely, and hassle-free services every time.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Services Offered -->
+  <section class="bg-gray-50 py-12">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-8 text-gray-900">What We Offer</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.pexels.com/photos/6585751/pexels-photo-6585751.jpeg" alt="Residential"
+            class="rounded-lg mb-4 h-48 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Residential Furniture Installation</h3>
+          <p class="text-gray-600">Expert installation of home furniture including beds, wardrobes, sofas, and dining sets.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg" alt="Office"
+            class="rounded-lg mb-4 h-48 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Office & Commercial Setup</h3>
+          <p class="text-gray-600">Efficient assembly and layout design for office desks, chairs, cubicles, and meeting spaces.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.pexels.com/photos/8134783/pexels-photo-8134783.jpeg" alt="Hospital"
+            class="rounded-lg mb-4 h-48 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Institutional & Healthcare</h3>
+          <p class="text-gray-600">Durable and hygienic furniture installations for hospitals, clinics, and educational spaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Projects Gallery -->
+  <section class="py-12 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Our Previous Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="https://images.pexels.com/photos/7061661/pexels-photo-7061661.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="https://images.pexels.com/photos/3935323/pexels-photo-3935323.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="biogenex.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="gym.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="banjarahills.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="kitchen.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform" height="100px">
+      <img src="interior.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform" height="100px">
+      <img src="vessellawoods.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="theatre.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      <img src="shoerack.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="fixed bottom-4 right-4 z-50">
+    <button id="chatbotToggle" class="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition">
+      💬
+    </button>
+    <div id="chatbotWindow" class="hidden bg-white rounded-lg shadow-xl w-80 max-h-[500px] flex flex-col mt-2">
+      <div class="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+        <h3 class="text-lg font-semibold">OG Assistant</h3>
+        <button id="chatbotClose" class="text-white hover:text-gray-200">✖</button>
+      </div>
+      <div id="chatbotMessages" class="flex-1 p-4 overflow-y-auto">
+        <div class="chatbot-bot chatbot-bubble">Hello! Want to know more about our services?</div>
+      </div>
+      <div class="p-4 border-t">
+        <input id="chatbotInput" type="text" placeholder="Type here..." class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-4 mt-8">
+    <p>Contact us: ogfurnitureservices@gmail.com | Phone: (+91) 9701223069</p>
+    <p>&copy; 2025 OG Furniture Installation Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Navbar Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+
+    // Chatbot Functionality
+    const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const chatbotClose = document.getElementById('chatbotClose');
+    const chatbotInput = document.getElementById('chatbotInput');
+    const chatbotMessages = document.getElementById('chatbotMessages');
+
+    chatbotToggle.addEventListener('click', () => chatbotWindow.classList.toggle('hidden'));
+    chatbotClose.addEventListener('click', () => chatbotWindow.classList.add('hidden'));
+    chatbotInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' && chatbotInput.value.trim()) {
+        const msg = chatbotInput.value;
+        chatbotMessages.innerHTML += `<div class="chatbot-user chatbot-bubble">${msg}</div>`;
+        chatbotInput.value = '';
+        setTimeout(() => {
+          chatbotMessages.innerHTML += `<div class="chatbot-bot chatbot-bubble">Thank you! Our team will reach out soon.</div>`;
+          chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
